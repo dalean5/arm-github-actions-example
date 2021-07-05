@@ -193,7 +193,15 @@
                         "name": "ubuntuVM1-OSDisk",
                         "caching": "ReadWrite",
                         "createOption": "FromImage"
-                    }
+                    },
+                    "dataDisks": [
+                        {
+                            "caching": "ReadWrite",
+                            "diskSizeGB": 1023,
+                            "lun": 0,
+                            "createOption": "Empty"
+                        }
+                    ]
                 },
                 "networkProfile": {
                     "networkInterfaces": [
